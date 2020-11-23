@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		CE0EB006256B8E5300759B27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EB005256B8E5300759B27 /* AppDelegate.swift */; };
 		CE0EB008256B8E5300759B27 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EB007256B8E5300759B27 /* SceneDelegate.swift */; };
-		CE0EB00A256B8E5300759B27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EB009256B8E5300759B27 /* ViewController.swift */; };
+		CE0EB00A256B8E5300759B27 /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EB009256B8E5300759B27 /* LocationVC.swift */; };
 		CE0EB00D256B8E5300759B27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0EB00B256B8E5300759B27 /* Main.storyboard */; };
 		CE0EB00F256B8E5D00759B27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE0EB00E256B8E5D00759B27 /* Assets.xcassets */; };
 		CE0EB012256B8E5D00759B27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0EB010256B8E5D00759B27 /* LaunchScreen.storyboard */; };
+		CE0EB01C256B949900759B27 /* Silom.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE0EB01B256B949900759B27 /* Silom.ttf */; };
+		CE0EB020256B99C100759B27 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EB01F256B99C100759B27 /* MapVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE0EB002256B8E5300759B27 /* Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Map.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0EB005256B8E5300759B27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE0EB007256B8E5300759B27 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE0EB009256B8E5300759B27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE0EB009256B8E5300759B27 /* LocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
 		CE0EB00C256B8E5300759B27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE0EB00E256B8E5D00759B27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE0EB011256B8E5D00759B27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE0EB013256B8E5D00759B27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE0EB01B256B949900759B27 /* Silom.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Silom.ttf; sourceTree = "<group>"; };
+		CE0EB01F256B99C100759B27 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +62,23 @@
 			children = (
 				CE0EB005256B8E5300759B27 /* AppDelegate.swift */,
 				CE0EB007256B8E5300759B27 /* SceneDelegate.swift */,
-				CE0EB009256B8E5300759B27 /* ViewController.swift */,
+				CE0EB01F256B99C100759B27 /* MapVC.swift */,
+				CE0EB009256B8E5300759B27 /* LocationVC.swift */,
+				CE0EB01A256B944200759B27 /* Font */,
 				CE0EB00B256B8E5300759B27 /* Main.storyboard */,
 				CE0EB00E256B8E5D00759B27 /* Assets.xcassets */,
 				CE0EB010256B8E5D00759B27 /* LaunchScreen.storyboard */,
 				CE0EB013256B8E5D00759B27 /* Info.plist */,
 			);
 			path = Map;
+			sourceTree = "<group>";
+		};
+		CE0EB01A256B944200759B27 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				CE0EB01B256B949900759B27 /* Silom.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE0EB012256B8E5D00759B27 /* LaunchScreen.storyboard in Resources */,
+				CE0EB01C256B949900759B27 /* Silom.ttf in Resources */,
 				CE0EB00F256B8E5D00759B27 /* Assets.xcassets in Resources */,
 				CE0EB00D256B8E5300759B27 /* Main.storyboard in Resources */,
 			);
@@ -137,7 +152,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE0EB00A256B8E5300759B27 /* ViewController.swift in Sources */,
+				CE0EB00A256B8E5300759B27 /* LocationVC.swift in Sources */,
+				CE0EB020256B99C100759B27 /* MapVC.swift in Sources */,
 				CE0EB006256B8E5300759B27 /* AppDelegate.swift in Sources */,
 				CE0EB008256B8E5300759B27 /* SceneDelegate.swift in Sources */,
 			);
